@@ -1,41 +1,30 @@
-### Inventory App
+# Inventory Management System (Frappe App)
 
-inventory app
+A custom Inventory Management System built using the [Frappe Framework](https://frappeframework.com/), designed to manage products, warehouses, and stock movements with reporting features.
 
-### Installation
+---
 
-You can install this app using the [bench](https://github.com/frappe/bench) CLI:
+## Features
 
-```bash
-cd $PATH_TO_YOUR_BENCH
-bench get-app $URL_OF_THIS_REPO --branch develop
-bench install-app inventory_app
-```
+- Item and Warehouse Doctype
+- Stock Movements (IN / OUT)
+- Stock Ledger Report
+- Stock Summary Report
+- Purchase Report
+- Sales Report
+- Warehouse Transfers with quantity validation
 
-### Contributing
+---
 
-This app uses `pre-commit` for code formatting and linting. Please [install pre-commit](https://pre-commit.com/#installation) and enable it for this repository:
+## Folder Structure (App)
 
-```bash
-cd apps/inventory_app
-pre-commit install
-```
+inventory_app/
+├── report/
+│ ├── purchase_report/
+│ ├── sales_report/
+│ ├── stock_ledger_report/
+│ └── stock_summary_report/
+├── public/
+├── scripts/
+└── doctype/
 
-Pre-commit is configured to use the following tools for checking and formatting your code:
-
-- ruff
-- eslint
-- prettier
-- pyupgrade
-
-### CI
-
-This app can use GitHub Actions for CI. The following workflows are configured:
-
-- CI: Installs this app and runs unit tests on every push to `develop` branch.
-- Linters: Runs [Frappe Semgrep Rules](https://github.com/frappe/semgrep-rules) and [pip-audit](https://pypi.org/project/pip-audit/) on every pull request.
-
-
-### License
-
-mit
