@@ -1,0 +1,23 @@
+{
+ "color": "#d9f059",
+ "creation": "2025-06-16 15:45:09.058121",
+ "currency": "INR",
+ "docstatus": 0,
+ "doctype": "Number Card",
+ "filters_json": "null",
+ "function": "Count",
+ "idx": 0,
+ "is_public": 1,
+ "is_standard": 1,
+ "label": "Total Stock Value",
+ "method": "inventory_app.utils.dashboard.get_total_stock_value",
+ "modified": "2025-06-30 13:32:19.412302",
+ "modified_by": "Administrator",
+ "module": "Inventory App",
+ "name": "Total Stock Value",
+ "owner": "Administrator",
+ "report_function": "Sum",
+ "show_percentage_stats": 1,
+ "stats_time_interval": "Daily",
+ "type": "Custom"
+}
