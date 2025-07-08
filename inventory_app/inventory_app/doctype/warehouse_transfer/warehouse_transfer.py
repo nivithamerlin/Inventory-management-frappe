@@ -27,7 +27,7 @@ class WarehouseTransfer(Document):
                 "warehouse": self.from_warehouse,
                 "quantity": -self.quantity,
                 "date": nowdate(),
-                "type": "Out"
+                "type": "Sales"
             })
             out_entry.insert()
             frappe.msgprint("OUT entry created")
@@ -58,7 +58,7 @@ class WarehouseTransfer(Document):
                 "warehouse": self.to_warehouse,
                 "quantity": self.quantity,
                 "date": nowdate(),
-                "type": "In"
+                "type": "Purchase"
             })
             in_entry.insert()
             frappe.msgprint("IN entry created")
