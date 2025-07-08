@@ -14,7 +14,8 @@
   "type",
   "category",
   "supplier",
-  "customer"
+  "customer",
+  "warehouse"
  ],
  "fields": [
   {
@@ -51,31 +52,36 @@
    "fieldname": "type",
    "fieldtype": "Select",
    "label": "Type",
-   "options": "In\nOut"
+   "options": "Purchase\nSales"
   },
   {
    "fieldname": "category",
-   "fieldtype": "Data",
-   "label": "Category"
+   "fieldtype": "Link",
+   "label": "Category",
+   "options": "Category"
   },
   {
    "fieldname": "supplier",
-   "fieldtype": "Link",
-   "label": "Supplier",
-   "options": "Supplier"
+   "fieldtype": "Data",
+   "label": "Supplier"
   },
   {
    "fieldname": "customer",
+   "fieldtype": "Data",
+   "label": "Customer"
+  },
+  {
+   "fieldname": "warehouse",
    "fieldtype": "Link",
-   "label": "Customer",
-   "options": "Customer"
+   "label": "Warehouse",
+   "options": "Warehouse"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-06-23 12:57:05.306904",
+ "modified": "2025-07-07 15:57:31.577627",
  "modified_by": "Administrator",
  "module": "Inventory App",
  "name": "Stock Entry",

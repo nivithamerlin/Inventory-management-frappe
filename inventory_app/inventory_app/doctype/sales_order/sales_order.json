@@ -10,10 +10,9 @@
   "customer",
   "warehouse",
   "date",
-  "status",
-  "item",
   "amended_from",
-  "total_amount"
+  "item",
+  "quantity"
  ],
  "fields": [
   {
@@ -24,10 +23,9 @@
   },
   {
    "fieldname": "customer",
-   "fieldtype": "Link",
+   "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Customer",
-   "options": "Customer"
+   "label": "Customer"
   },
   {
    "fieldname": "warehouse",
@@ -43,17 +41,10 @@
    "label": "Date"
   },
   {
-   "fieldname": "status",
-   "fieldtype": "Select",
-   "in_list_view": 1,
-   "label": "Status",
-   "options": "Draft\nSubmitted\nDelivered"
-  },
-  {
    "fieldname": "item",
-   "fieldtype": "Table",
+   "fieldtype": "Link",
    "label": "Item",
-   "options": "Sales Order Item"
+   "options": "Item"
   },
   {
    "fieldname": "amended_from",
@@ -66,16 +57,16 @@
    "search_index": 1
   },
   {
-   "fieldname": "total_amount",
-   "fieldtype": "Currency",
-   "label": "Total_amount"
+   "fieldname": "quantity",
+   "fieldtype": "Int",
+   "label": "Quantity"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-06-25 18:01:25.802571",
+ "modified": "2025-07-07 15:45:00.078084",
  "modified_by": "Administrator",
  "module": "Inventory App",
  "name": "Sales Order",
