@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:warehouse",
+ "autoname": "PO.###",
  "creation": "2025-06-19 12:33:42.485955",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -25,8 +25,7 @@
    "fieldname": "warehouse",
    "fieldtype": "Link",
    "label": "Warehouse",
-   "options": "Warehouse",
-   "unique": 1
+   "options": "Warehouse"
   },
   {
    "fieldname": "supplier",
@@ -68,11 +67,11 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-07-07 15:36:14.271682",
+ "modified": "2025-07-08 15:58:00.919723",
  "modified_by": "Administrator",
  "module": "Inventory App",
  "name": "Purchase Order",
- "naming_rule": "By fieldname",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
